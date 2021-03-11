@@ -1,3 +1,5 @@
+//Fade in JavaScript for 3ximages (consecutive)
+
 var pics = document.getElementById("pics");
 
 var height,
@@ -25,6 +27,8 @@ function adjustHeightVars() {
 
 adjustHeightVars();
 console.log(pics);
+
+//Google Maps JavaScript and location data
 
 function initMap() {
     var map = new google.maps.Map(document.getElementById("map"), {

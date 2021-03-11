@@ -134,6 +134,16 @@ li a:hover {
 	}
 }
 
+.buttonsx3 {    
+    background-color: green;
+    margin-bottom: 40px;
+}
+
+.buttonsx3:hover{
+    background-color: blue;
+}
+
+
 /*--------------------------------------------Map*/
 div#map {
     min-height: 360px;
