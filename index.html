@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -8,7 +7,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
@@ -16,38 +14,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Open+Sans&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Open+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
     <title>Milestone Project 2</title>
 </head>
-
 <body>
 
-    <nav class="navbar navbar-dark navbar-expand-md">
+<! --Navbar-- >
+<nav class="navbar navbar-dark navbar-expand-md">
 
-        <a href="#"><img src="assets/images/the_burren_logo.jpg"></a>
 
-        <div class="navbar-header navbar-expand-md mr-auto">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
+	<a href="#"><img class="logo" src="assets/images/the_burren_logo.jpg" alt="logo"></a>
+     
+	 <button type="button" class="navbar-toggle mr-auto" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  
+	 <div class="navbar-collapse collapse" id="myNavbar"> <!-- Links Nav Menu -->
+	
+                    <ul class="nav navbar-nav flex-row">
+                        <li class="right-space"><a href="#">Things To Do</a></li>
+                        <li class="right-space"><a href="#">Map</a></li>
+                        <li class="right-space"><a href="#">Flights</a></li>
+                        <li class="right-space"><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+</nav>
 
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav flex-row">
-                    <li class="right-space"><a href="#">Things To Do</a></li>
-                    <li class="right-space"><a href="#">Maps</a></li>
-                    <li class="right-space"><a href="#">Flights & Weather</a></li>
-                    <li class="right-space"><a href="#">Contact Us</a></li>
-                </ul>
-            </div>
 
-    </nav>
 
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-   
+<!-- Carousel/Slides x 4-->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
     <div class="carousel-inner">
         <div class="item active">
             <img src="assets/images/burren-thistle.jpg" alt="Burren Thistle">
@@ -64,8 +64,7 @@
     </div>
 	
 	<div class="carousel-caption">
-            <h1>Come Visit The Burren 
-			<a class="btn btn-lg btn-primary" href="#" role="button">About</a></h1>
+            <h1>Come Visit The Burren</h1>
             </div>
 
     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
@@ -76,70 +75,83 @@
         <span class="glyphicon glyphicon-chevron-right"></span>
         <span class="sr-only">Next</span>
     </a>
+</div>
+
+<!-- About section - text describing the area that is the subject of the website -->
+<div class="container">
+  <div class="row">
+    <div class="col-12 text-center">
+      <h1 class="about">About The Burren</h1>
+      <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
+   
+  </div>
+</div>
 
-
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h1 class="about">About The Burren</h1>
-                <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-
-        </div>
+<!-- FadeIn images and headings x 3 (JavaScript) -->
+<div class="container places">
+  <div class="row" id="pics">
+    <div class="col-12 col-md-4 explore one">
+      <h2>Explore</h2>
+	  <img src="assets/images/places/explore.PNG" alt="Explore">
     </div>
-
-
-    <div class="container places">
-        <div class="row">
-            <div class="col-12 col-md-4 explore">
-                <h2>Explore</h2>
-                <img src="assets/images/places/explore.PNG" alt="Explore">
-            </div>
-            <div class="col-12 col-md-4 eat">
-                <h2>Eat</h2>
-                <img src="assets/images/places/eat.jpg" alt="Eat">
-            </div>
-            <div class="col-12 col-md-4 enjoy">
-                <h2>Enjoy</h2>
-                <img src="assets/images/places/enjoy.jpg" alt="Enjoy">
-            </div>
-        </div>
+    <div class="col-12 col-md-4 eat two">
+      <h2>Eat</h2>
+      <img src="assets/images/places/eat.jpg" alt="Eat"> 
     </div>
+    <div class="col-12 col-md-4 enjoy three">
+      <h2>Enjoy</h2>
+	  <img src="assets/images/places/enjoy.jpg" alt="Enjoy"> 
+    </div>
+  </div>
+ 
+<!-- Text section describing attractions related to the area that is the subject of the website--> 
+  <div class="row change-image-info container">
+	<h3>Enjoy Top-Class Restaurants</h3>
+	<p>The Burren region is famous for it's fresh sea-food restaurants and fine food made with locally sourced products. View a list of our favourites below, along with locations on the map.</p>
+  </div>
+</div>
+    
 
+<!-- Text section describing attractions related to the area that is the subject of the website-->
     <div class="container">
         <h3>Enjoy Top-Class Restaurants</h3>
-        <p>he Burren region is famous for it's fresh sea-food restaurants and fine food made with locally sourced products. View a list of our favourites below, along with locations on the map.</p>
+        <p>The Burren region is famous for it's fresh sea-food restaurants and fine food made with locally sourced products. View a list of our favourites below, along with locations on the map.</p>
     </div>
 
+    <!-- Buttons, locations and Map API (JavaScript) -->
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-6">map</div>
-            <div class="col-12 col-md-6">expander</div>
+            <div class="col-12 col-md-6">buttons and text</div>
+            <div class="col-12 col-md-6" id="map"></div>
         </div>
 
+    <!-- Weather Widget and Text -->
+    <div class="row">
+            <div class="col-12 col-md-4">Weather Widget</div>
+            <div class="col-12 col-md-8">
+                <h3>Clare Weather</h3>
+                <p>The weather in Co. Clare is notorious world-wide. Many visitors to the area note the cold, wind and rain that is often experienced in The Burren Region.</p>
+            </div>
+        </div>
+
+<!-- EmailJS contact form-->
         <div class="row">
-            <div class="col-12 col-md-8">flights</div>
-            <div class="col-12 col-md-4">weather</div>
+            <div class="col-12 col-md-8">emailjs form</div>
+            
         </div>
     </div>
 
+<!-- Footer with flights widget and social media icons -->
     <footer class="text-center">
         <div class="container">
             <div class="row">
-                <div class="col-3">FB</div>
-                <div class="col-3">IG</div>
-                <div class="col-3">TW</div>
-                <div class="col-3">YT</div>
+                <p></p>
             </div>
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -148,6 +160,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+<script
+        src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA23O3vwdX7xN0ua0DT61_b-SMu3Z9OVts
+&callback=initMap"></script>
+<script src="https://widgets.skyscanner.net/widget-server/js/loader.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
 
 </html>
