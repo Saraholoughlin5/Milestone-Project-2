@@ -1,42 +1,40 @@
 .navbar {
-	display: flex;	
 	padding-bottom: 0;
-	margin-bottom: 0;
-}
+    margin-bottom: 0;
+    background-color: white;
 
-.navbar-expand-md {
-	align-items: right;
-}
-
-li {
-	list-style-type: none;
-    font-family: 'Open Sans', sans-serif;
-	margin-top: 50px;	
-}
-
-li a {
-  color: black;
-  font-size: 12pt;
-  text-align: left;
-margin-top: -28px;
-  margin-left: 10px;
-  text-decoration: none;
-
-}
-
-li a:hover {
-	color: purple;
-	text-decoration: none;
-	background-color: white;
 }
 
 .navbar-toggle {
-	background-color: beige;
-	border-color: grey;
-	text-align: right;
-
+    background-color: white;
 }
 
+.navbar-toggle:hover {
+    background-color: beige !important;
+}
+.navbar-toggle:focus {
+    background-color: white !important;
+}
+
+
+.navbar-brand {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 20pt;
+    font-weight: bold;
+    color: grey !important;
+}
+
+.navbar-brand:hover {
+    text-shadow: 2px 2px beige;
+}
+.navbar-nav {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12pt;
+}
+
+.navbar-nav a:hover {
+    font-weight: bold;
+}
 
 .carousel-inner .item img{
 	width: 100%;
@@ -153,9 +151,12 @@ footer {
 	background-color: beige;
 }
 
-.footer-contents {
+.socials {
+    display: flex;
+    justify-content: space-between;
 	padding-top: 40px;
-	padding-bottom: 40px;
+    padding-bottom: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
-
 
