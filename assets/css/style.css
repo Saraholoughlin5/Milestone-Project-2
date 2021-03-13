@@ -133,14 +133,22 @@
 }
 
 .buttonsx3 {    
-    background-color: green;
+    font-family: 'Fredericka the Great', cursive;
+    background-color: grey;
     margin-bottom: 40px;
+  
+    border: none;
 }
+
 
 .buttonsx3:hover{
-    background-color: blue;
+    background-color: fuchsia;
 }
 
+.buttonsrow {
+    display: flex;
+    justify-content: space-between;
+}
 
 /*--------------------------------------------Map*/
 div#map {
@@ -148,15 +156,19 @@ div#map {
 }
 
 footer {
-	background-color: beige;
+	background-color: grey;
 }
 
 .socials {
     display: flex;
     justify-content: space-between;
-	padding-top: 40px;
-    padding-bottom: 40px;
-    margin-left: 40px;
-    margin-right: 40px;
+    color: white;
+    font-size: 16pt;
+	padding-top: 20px;
+    padding-bottom: 20px;
 }
 
+.copyright {
+    font-family: 'Open-Sans', sans-serif;
+    color: white;
+}
