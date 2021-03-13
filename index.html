@@ -73,7 +73,7 @@
             </div>
         </div>
 
-    <!-- Carousel Caption -->
+        <!-- Carousel Caption -->
         <div class="carousel-caption">
             <h1>Come Visit The Burren</h1>
         </div>
@@ -104,7 +104,7 @@
     </div>
 
     <!-- FadeIn images and headings x 3 (JavaScript) -->
-    <div class="container picsx3">
+    <div class="container places">
         <div class="row" id="pics">
             <div class="col-12 col-md-4 explore one">
                 <h2>Explore</h2>
@@ -140,19 +140,19 @@
         <div class="row">
             <div class="col-12 col-md-6">
                 <div class="buttonsrow" id="map-section">
-                    <button type="button" class="btn btn-primary btn-lg buttonsx3"><i
+                    <button type="button" class="btn btn-primary btn-lg buttonsx3" onclick="initChoice('restaurants')"><i
                             class="fas fa-utensils visible-xs"></i><span class="hidden-xs">Restaurants</span></button>
-                    <button type="button" class="btn btn-primary btn-lg buttonsx3"><i
+                    <button type="button" class="btn btn-primary btn-lg buttonsx3" onclick="initChoice('accommodations')"><i
                             class="fas fa-bed visible-xs"></i><span class="hidden-xs">Accommodation</span></button>
-                    <button type="button" class="btn btn-primary btn-lg buttonsx3"><i
+                    <button type="button" class="btn btn-primary btn-lg buttonsx3" onclick="initChoice('attractions')"><i
                             class="fas fa-binoculars visible-xs"></i><span class="hidden-xs">Attractions</span></button>
                 </div>
                 <div class="map-links">
-                    <p>1. text</p>
-                    <p>1. text</p>
-                    <p>1. text</p>
-                    <p>1. text</p>
-                    <p>1. text</p>
+                    <p>A. Bofeys</p>
+                    <p>B. Monks</p>
+                    <p>C. Wild Atlantic Lodge</p>
+                    <p>D. Tea & Garden Rooms</p>
+                    <p>E. Red Onion</p>
                 </div>
             </div>
             <div class="col-12 col-md-6" id="map"></div>
@@ -164,7 +164,8 @@
         <div class="row">
             <div class="col-12 col-md-9">
                 <h3>Clare Weather</h3>
-                <p class="weather-text">The weather in Co. Clare is notorious world-wide. Many visitors to the area note the cold, wind
+                <p class="weather-text">The weather in Co. Clare is notorious world-wide. Many visitors to the area note
+                    the cold, wind
                     and rain that is often experienced in The Burren Region.</p>
             </div>
             <div class="col-12 col-md-3 weather"><iframe style="border: 0px #ccc solid;"

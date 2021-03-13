@@ -1,6 +1,5 @@
 /* Body style to eliminate any white space */
-html,body
-{
+body {
     width: 100%;
     height: 100%;
     margin: 0px;
@@ -106,11 +105,11 @@ html,body
 }
 
 /* Styling related to the 3 mid-page images and their headings */
-.picsx3 {
+.places {
 	padding-bottom: 20px;
 }
 
-.picsx3 h2 {
+.places h2 {
 	font-family: 'Fredericka the Great', cursive;
 	text-align: center;
 	background-color: rgba(0, 0, 0, 0.5);
@@ -121,23 +120,21 @@ html,body
 .explore img {
 	width: 100%;
 	margin-top: -10px;
-
+	margin-bottom: 30px;
 }
 
 .eat img {
 	width: 100%;
 	margin-top: -10px;
-
+	margin-bottom: 30px;
 }
 
 .enjoy img {
 	width: 100%;
 	margin-top: -10px;
-
+	margin-bottom: 30px;
 }
 
-
-/* Fade In JavaScript animation details */
 .one {
 	animation-delay: none;
 }
