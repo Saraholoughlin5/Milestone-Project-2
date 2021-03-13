@@ -1,3 +1,14 @@
+/* Body style to eliminate any white space */
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+/* Navbar */
 .navbar {
 	padding-bottom: 0;
     margin-bottom: 0;
@@ -5,6 +16,7 @@
 
 }
 
+/* Navbar toggle styling */
 .navbar-toggle {
     background-color: white;
 }
@@ -16,7 +28,7 @@
     background-color: white !important;
 }
 
-
+/* Navbar brand/logo styling */
 .navbar-brand {
     font-family: 'Fredericka the Great', cursive;
     font-size: 20pt;
@@ -27,6 +39,8 @@
 .navbar-brand:hover {
     text-shadow: 2px 2px beige;
 }
+
+/* Navbar contents list styling */
 .navbar-nav {
     font-family: 'Open Sans', sans-serif;
     font-size: 12pt;
@@ -36,13 +50,14 @@
     font-weight: bold;
 }
 
+/* Carousel view styling */
 .carousel-inner .item img{
 	width: 100%;
 	height: 650px;
 	object-fit: cover;	
 }
 
-
+/* Carousel caption styling, including increased visibility of font using the @supports feature */
 .carousel-caption h1 {
 	font-family: 'Fredericka the Great', cursive;
 	font-size: 58pt;
@@ -60,6 +75,7 @@
   }
 }
 
+/* 'About The Burren' section - styling for heading and text */
 .about {
 	font-family: 'Fredericka the Great', cursive;
 	font-size: 26pt;
@@ -69,14 +85,32 @@
 }
 
 .about-text {
-	margin-bottom: 40px;
+    text-align: justify;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
-.places {
+/* 'Things To Do' section -styling for heading and text */
+.things {
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 26pt;
+    color: green;
+    margin-bottom: 10px;
+}
+
+.things-text {
+    text-align: justify;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+}
+
+/* Styling related to the 3 mid-page images and their headings */
+.picsx3 {
 	padding-bottom: 20px;
 }
 
-.places h2 {
+.picsx3 h2 {
 	font-family: 'Fredericka the Great', cursive;
 	text-align: center;
 	background-color: rgba(0, 0, 0, 0.5);
@@ -87,21 +121,23 @@
 .explore img {
 	width: 100%;
 	margin-top: -10px;
-	margin-bottom: 30px;
+
 }
 
 .eat img {
 	width: 100%;
 	margin-top: -10px;
-	margin-bottom: 30px;
+
 }
 
 .enjoy img {
 	width: 100%;
 	margin-top: -10px;
-	margin-bottom: 30px;
+
 }
 
+
+/* Fade In JavaScript animation details */
 .one {
 	animation-delay: none;
 }
@@ -132,33 +168,78 @@
 	}
 }
 
+/* Styling for buttons x 3 linked to Google Maps */
 .buttonsx3 {    
     font-family: 'Fredericka the Great', cursive;
     background-color: grey;
-    margin-bottom: 40px;
-  
+    margin-bottom: 20px;
+    margin-right: 20px;
     border: none;
 }
 
 
 .buttonsx3:hover{
     background-color: fuchsia;
+    margin-right: 20px;
 }
 
 .buttonsrow {
     display: flex;
     justify-content: space-between;
+
 }
 
-/*--------------------------------------------Map*/
+/* Styling for Google Maps */
+.map-links {
+    margin: 30px;
+    text-align: left;
+}
+
 div#map {
     min-height: 360px;
 }
 
+/* Weather section layout styling */
+
+.weather-items h3 {
+    margin-top: 40px;
+    font-family: 'Fredericka the Great', cursive;
+    color: green;
+}
+
+
+.weather-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12pt;
+    color: black;
+}
+
+@supports (-webkit-text-stroke: 1px black) {
+  .weather-items h3 {
+    -webkit-text-stroke: 1px rgba(25, 51, 0, 0.5);
+    -webkit-text-fill-color: green;
+  }
+}
+
+/* Contact Form styling */
+.contact-us h3 {
+    font-family: 'Fredericka the Great', cursive;
+    color: green;
+}
+
+@supports (-webkit-text-stroke: 1px black) {
+  .contact-us h3 {
+    -webkit-text-stroke: 1px rgba(25, 51, 0, 0.5);
+    -webkit-text-fill-color: green;
+  }
+}
+
+/* Footer styling */
 footer {
 	background-color: grey;
 }
 
+/* Social media icons styling */
 .socials {
     display: flex;
     justify-content: space-between;
@@ -166,9 +247,19 @@ footer {
     font-size: 16pt;
 	padding-top: 20px;
     padding-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
+/* Copyright text styling */
 .copyright {
     font-family: 'Open-Sans', sans-serif;
     color: white;
 }
+
+/* Media Queries */
+@media (min-device-width: 480px) {
+      .weather {
+          text-align: center;
+      }
+  }

@@ -23,174 +23,214 @@
 
 <body>
 
-    <! --Navbar-->
-        <nav class="navbar navbar-default">
-            <div class="container">
-                <div class="navbar-header">
+    <!--Navbar-->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
 
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
 
-            <a class="navbar-brand" href="#">The Burren</a>
+                <a class="navbar-brand" href="#">The Burren</a>
             </div>
 
             <div class="collapse navbar-collapse" id="myNavbar">
                 <!-- Links Nav Menu -->
 
                 <ul class="nav navbar-nav">
-                    <li><a href="#">Things To Do</a></li>
-                    <li><a href="#">Map</a></li>
-                    <li><a href="#">Flights</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#about">About The Burren</a></li>
+                    <li><a href="#things">Things To Do</a></li>
+                    <li><a href="#map-section">Map</a></li>
+                    <li><a href="#weather">Weather</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
                 </ul>
             </div>
         </div>
 
-        </nav>
+    </nav>
 
 
 
-        <!-- Carousel/Slides x 4-->
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Carousel/Slides x 4-->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
-            <div class="carousel-inner">
-                <div class="item active">
-                    <img src="assets/images/burren-thistle.jpg" alt="Burren Thistle">
-                </div>
-                <div class="item">
-                    <img src="assets/images/cliffs.jpg" alt="Cliffs of Moher">
-                </div>
-                <div class="item">
-                    <img src="assets/images/pollnabron1.png" alt="Poll na Bron">
-                </div>
-                <div class="item">
-                    <img src="assets/images/burren-sea.jpg" alt="Burren Sea">
-                </div>
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="assets/images/burren-thistle.jpg" alt="Burren Thistle">
             </div>
-
-            <div class="carousel-caption">
-                <h1>Come Visit The Burren</h1>
+            <div class="item">
+                <img src="assets/images/cliffs.jpg" alt="Cliffs of Moher">
             </div>
-
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-                <span class="sr-only">Prev</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-                <span class="sr-only">Next</span>
-            </a>
+            <div class="item">
+                <img src="assets/images/pollnabron2.jpg" alt="Poll na Bron">
+            </div>
+            <div class="item">
+                <img src="assets/images/burren-sea.jpg" alt="Burren Sea">
+            </div>
         </div>
 
-        <!-- About section - text describing the area that is the subject of the website -->
+    <!-- Carousel Caption -->
+        <div class="carousel-caption">
+            <h1>Come Visit The Burren</h1>
+        </div>
+
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Prev</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- About section - text describing the area that is the subject of the website -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="about" id="about">About The Burren</h1>
+                <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FadeIn images and headings x 3 (JavaScript) -->
+    <div class="container picsx3">
+        <div class="row" id="pics">
+            <div class="col-12 col-md-4 explore one">
+                <h2>Explore</h2>
+                <img src="assets/images/places/explore.PNG" alt="Explore">
+            </div>
+            <div class="col-12 col-md-4 eat two">
+                <h2>Eat</h2>
+                <img src="assets/images/places/eat.jpg" alt="Eat">
+            </div>
+            <div class="col-12 col-md-4 enjoy three">
+                <h2>Enjoy</h2>
+                <img src="assets/images/places/enjoy.jpg" alt="Enjoy">
+            </div>
+        </div>
+    </div>
+    <!-- Text section describing attractions related to the area that is the subject of the website-->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="things" id="things">Things To Do</h1>
+                <p class="things-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Buttons, locations and Map API (JavaScript) -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="buttonsrow" id="map-section">
+                    <button type="button" class="btn btn-primary btn-lg buttonsx3"><i
+                            class="fas fa-utensils visible-xs"></i><span class="hidden-xs">Restaurants</span></button>
+                    <button type="button" class="btn btn-primary btn-lg buttonsx3"><i
+                            class="fas fa-bed visible-xs"></i><span class="hidden-xs">Accommodation</span></button>
+                    <button type="button" class="btn btn-primary btn-lg buttonsx3"><i
+                            class="fas fa-binoculars visible-xs"></i><span class="hidden-xs">Attractions</span></button>
+                </div>
+                <div class="map-links">
+                    <p>1. text</p>
+                    <p>1. text</p>
+                    <p>1. text</p>
+                    <p>1. text</p>
+                    <p>1. text</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6" id="map"></div>
+        </div>
+    </div>
+
+    <!-- Weather Widget and Text -->
+    <div class="container weather-items" id="weather">
+        <div class="row">
+            <div class="col-12 col-md-9">
+                <h3>Clare Weather</h3>
+                <p class="weather-text">The weather in Co. Clare is notorious world-wide. Many visitors to the area note the cold, wind
+                    and rain that is often experienced in The Burren Region.</p>
+            </div>
+            <div class="col-12 col-md-3 weather"><iframe style="border: 0px #ccc solid;"
+                    src="https://www.met.ie/widgets/county/Clare" name="MEWarning" width="225" height="170"
+                    frameborder="0" marginwidth="0px" marginheight="0px" scrolling="no"
+                    allowfullscreen="allowfullscreen"></iframe></div>
+
+        </div>
+    </div>
+
+    <!-- EmailJS contact form-->
+    <div class="container contact-us" id="contact">
+
+        <h3>Contact Us</h3>
+        <form>
+
+            <div class="form-group">
+                <label class="form-label">Name:</label>
+                <input type="text" class="form-control" id="contact-form1" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="email">Email address:</label>
+                <input type="email" class="form-control" id="contact-form2" placeholder="Email address">
+            </div>
+            <div class="form-group">
+                <label class="form-label">Your query:</label>
+                <textarea class="form-control" id="contact-form3" rows="3"
+                    placeholder="Enter your query here"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-md">Submit</button>
+        </form>
+
+    </div>
+
+
+    <!-- Footer with social media icons -->
+    <footer class="text-center">
         <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h1 class="about">About The Burren</h1>
-                    <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-
+            <div class="socials">
+                <span><i class="fab fa-facebook-square"></i></span>
+                <span><i class="fab fa-twitter-square"></i></span>
+                <span><i class="fab fa-instagram"></i></span>
+                <span><i class="fab fa-youtube"></i></span>
+            </div>
+            <div>
+                <p class="copyright">Copyright 2021</p>
             </div>
         </div>
+    </footer>
 
-        <!-- FadeIn images and headings x 3 (JavaScript) -->
-        <div class="container places">
-            <div class="row" id="pics">
-                <div class="col-12 col-md-4 explore one">
-                    <h2>Explore</h2>
-                    <img src="assets/images/places/explore.PNG" alt="Explore">
-                </div>
-                <div class="col-12 col-md-4 eat two">
-                    <h2>Eat</h2>
-                    <img src="assets/images/places/eat.jpg" alt="Eat">
-                </div>
-                <div class="col-12 col-md-4 enjoy three">
-                    <h2>Enjoy</h2>
-                    <img src="assets/images/places/enjoy.jpg" alt="Enjoy">
-                </div>
-            </div>
-
-            <!-- Text section describing attractions related to the area that is the subject of the website-->
-            <div class="row change-image-info container">
-                <h3>Enjoy Top-Class Restaurants, Accommodation and Attractions</h3>
-                <p>The Burren region is famous for it's fresh sea-food restaurants and fine food made with locally
-                    sourced products. View a list of our favourites below, along with locations on the map.</p>
-            </div>
-        </div>
-
-        <!-- Buttons, locations and Map API (JavaScript) -->
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <div class="buttonsrow">
-                    <button type="button" class="btn btn-primary btn-lg buttonsx3"><i class="fas fa-utensils visible-xs"></i><span class="hidden-xs">Restaurants</span></button>
-                    <button type="button" class="btn btn-primary btn-lg buttonsx3"><i class="fas fa-bed visible-xs"></i><span class="hidden-xs">Accommodation</span></button>
-                    <button type="button" class="btn btn-primary btn-lg buttonsx3"><i class="fas fa-binoculars visible-xs"></i><span class="hidden-xs">Attractions</span></button>
-                    </div>
-                    <div class="map-links">
-                    <p>1. text</p>
-                    <p>1. text</p>
-                    <p>1. text</p>
-                    <p>1. text</p>
-                    <p>1. text</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6" id="map"></div>
-            </div>
-            </div>
-
-            <!-- Weather Widget and Text -->
-            <div class="row">
-                <div class="col-12 col-md-4"><iframe style="border: 0px #ccc solid;" src="https://www.met.ie/widgets/county/Clare" name="MEWarning" width="225" height="170" frameborder="0" marginwidth="0px" marginheight="0px" scrolling="no" allowfullscreen="allowfullscreen"></iframe></div>
-                <div class="col-12 col-md-8">
-                    <h3>Clare Weather</h3>
-                    <p>The weather in Co. Clare is notorious world-wide. Many visitors to the area note the cold, wind
-                        and rain that is often experienced in The Burren Region.</p>
-                </div>
-            </div>
-
-            <!-- EmailJS contact form-->
-            <div class="row">
-                <div class="col-12 col-md-8">emailjs form</div>
-
-            </div>
-
-        <!-- Footer with social media icons -->
-        <footer class="text-center">
-            <div class="container">
-                <div class="socials">
-                    <span><i class="fab fa-facebook-square"></i></span>
-                    <span><i class="fab fa-twitter-square"></i></span>
-                    <span><i class="fab fa-instagram"></i></span>
-                    <span><i class="fab fa-youtube"></i></span>
-                </div>
-                <div><p class="copyright">Copyright 2021</p></div>
-            </div>
-        </footer>
-
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
-        <script
-            src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA23O3vwdX7xN0ua0DT61_b-SMu3Z9OVts
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script
+        src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA23O3vwdX7xN0ua0DT61_b-SMu3Z9OVts
 &callback=initMap"></script>
-        <script src="https://widgets.skyscanner.net/widget-server/js/loader.js"></script>
-        <script src="assets/js/script.js"></script>
+    <script src="https://widgets.skyscanner.net/widget-server/js/loader.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
