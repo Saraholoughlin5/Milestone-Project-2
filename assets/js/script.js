@@ -1,4 +1,4 @@
-// Declaring Global variable "Burren" Object //
+// Declaring Global variable "Burren" Object.
 const myObj = {
     burren: {
         restaurants: ['Bofeys', 52.94537, -9.06517, 'Monks', 53.11988, -9.15470, 'Wild Atlantic Lodge', 53.11598, -9.14812, 'Tea & Garden Rooms', 53.11906, -9.15373, 'Red Onion', 52.99014, -9.21973], 
@@ -7,47 +7,46 @@ const myObj = {
     }
 }   
 
+// Declaring Global variables as null initially.
+var myVar0; var myVar1; var myVar2; var myVar3; var myVar4; var myVar5; var myVar6; var myVar7;
+var myVar8; var myVar8; var myVar9; var myVar10; var myVar11; var myVar12; var myVar13; var myVar14;
 
+// function to change between restaurants, accommodations and attractions.
 function initChoice(choices) {
         return (myVar0 = Object.keys(myObj).map((key) => myObj[key][choices][0]),
-        myVar1 = Object.keys(myObj).map((key) => myObj[key][choices][1]),
-        myVar2 = Object.keys(myObj).map((key) => myObj[key][choices][2]),
+        myVar1 = Object.keys(myObj).map((key) => myObj[key][choices][1])[0],
+        myVar2 = Object.keys(myObj).map((key) => myObj[key][choices][2])[0],
         myVar3 = Object.keys(myObj).map((key) => myObj[key][choices][3]),
-        myVar4 = Object.keys(myObj).map((key) => myObj[key][choices][4]),
-        myVar5 = Object.keys(myObj).map((key) => myObj[key][choices][5]),
+        myVar4 = Object.keys(myObj).map((key) => myObj[key][choices][4])[0],
+        myVar5 = Object.keys(myObj).map((key) => myObj[key][choices][5])[0],
         myVar6 = Object.keys(myObj).map((key) => myObj[key][choices][6]),
-        myVar7 = Object.keys(myObj).map((key) => myObj[key][choices][7]),
-        myVar8 = Object.keys(myObj).map((key) => myObj[key][choices][8]),
+        myVar7 = Object.keys(myObj).map((key) => myObj[key][choices][7])[0],
+        myVar8 = Object.keys(myObj).map((key) => myObj[key][choices][8])[0],
         myVar9 = Object.keys(myObj).map((key) => myObj[key][choices][9]),
-        myVar10 = Object.keys(myObj).map((key) => myObj[key][choices][10]),
-        myVar11 = Object.keys(myObj).map((key) => myObj[key][choices][11]),
+        myVar10 = Object.keys(myObj).map((key) => myObj[key][choices][10])[0],
+        myVar11 = Object.keys(myObj).map((key) => myObj[key][choices][11])[0],
         myVar12 = Object.keys(myObj).map((key) => myObj[key][choices][12]),
-        myVar13 = Object.keys(myObj).map((key) => myObj[key][choices][13]),
-        myVar14 = Object.keys(myObj).map((key) => myObj[key][choices][14])),
-        logger();
+        myVar13 = Object.keys(myObj).map((key) => myObj[key][choices][13])[0],
+        myVar14 = Object.keys(myObj).map((key) => myObj[key][choices][14])[0]),
+        changeDivTxt();
 }
 
-function logger() {
-        console.log(myVar0);
-        console.log(myVar1);
-        console.log(myVar2);
-        console.log(myVar3);
-        console.log(myVar4);
-        console.log(myVar5);
-        console.log(myVar6);
-        console.log(myVar7);
-        console.log(myVar8);
-        console.log(myVar9);
-        console.log(myVar10);
-        console.log(myVar11);
-        console.log(myVar12);
-        console.log(myVar13);
-        console.log(myVar14);
+// Change div text
+function changeDivTxt() {
+    var newDivTxt0 = document.getElementById("p0");
+    var newDivTxt1 = document.getElementById("p1");
+    var newDivTxt2 = document.getElementById("p2");
+    var newDivTxt3 = document.getElementById("p3");
+    var newDivTxt4 = document.getElementById("p4");
+    newDivTxt0.innerHTML = myVar0;
+    newDivTxt1.innerHTML = myVar3;
+    newDivTxt2.innerHTML = myVar6;
+    newDivTxt3.innerHTML = myVar9;
+    newDivTxt4.innerHTML = myVar12;
+    setMap();
 }
-
 
 //Fade in JavaScript for 3ximages (consecutive)
-
 var pics = document.getElementById("pics");
 
 var height,
@@ -74,16 +73,14 @@ function adjustHeightVars() {
 }
 
 adjustHeightVars();
-console.log(pics);
 
 //Google Maps JavaScript and location data
-
 function initMap() {
     var map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 3,
+        zoom: 10,
         center: {
-            lat: 46.619261,
-            lng: -33.134766
+            lat: 53.03760,
+            lng: -9.07613
         }
     });
 
@@ -117,5 +114,46 @@ function initMap() {
         imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
     });
 }
+
+function setMap() {
+    var map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 10,
+        center: {
+            lat: 53.03760,
+            lng: -9.07613
+        }
+    });
+
+    var labels = "ABCDE";
+
+    var locations = [{
+        lat: myVar1,
+        lng: myVar2
+    }, {
+        lat: myVar4,
+        lng: myVar5
+    }, {
+        lat: myVar7,
+        lng: myVar8
+    }, {
+        lat: myVar10,
+        lng: myVar11
+    }, {
+        lat: myVar13,
+        lng: myVar14
+    }];
+
+    var markers = locations.map(function (location, i) {
+        return new google.maps.Marker({
+            position: location,
+            label: labels[i % labels.length]
+        });
+    });
+
+    var markerCluster = new MarkerClusterer(map, markers, {
+        imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
+    });
+}
+//Google Maps JavaScript and location data
 
 // Contact Form (EmailJS)
