@@ -5,15 +5,22 @@ var increment = 0;
 // Declaring Global variable "Burren" Object.
 const myObj = {
     burren: {
-        restaurants: ["Bofey Quinn's Bar & Lodge, Corofin", 52.94537, -9.06517, "Monks Seafood Restaurant & Bar, Ballyvaughan", 53.11988, -9.15470, "The Wild Atlantic Lodge, Ballyvaughan", 53.11598, -9.14812, "Tea & Garden Rooms, Ballyvaughan", 53.11906, -9.15373, "Vaughan's Pub, Kilfenora", 52.99014, -9.21974], 
-        accommodations: ["The Wild Atlantic Lodge, Ballyvaughan", 53.11595, -9.14816, "Vaughan Lodge Hotel, Lahinch", 52.93323, -9.34100, "Ballinalacken Castle, Country House Hotel, Doolin", 53.04661, -9.33783, "Sheedy's Country House Hotel, Lisdoonvarna",53.03076, -9.28944, "Doolin Inn, Doolin", 53.01280, -9.38368],
-        attractions: ["Poulnabrone Dolmen, Poulnabrone", 53.04879, -9.14007, "Doolin Cliff Walks, Doolin", 52.99854, -9.38787, "Burren Birds of Prey Centre, Ballyvaughan", 53.08936, -9.14394, "Cliffs of Moher Geopark, Inis Díomáin", 52.97236, -9.42632, "The Burren Centre, Kilfenora", 52.99043, -9.21658]
+        restaurants: ["Bofey Quinn's Bar & Lodge, Corofin", 52.94537, -9.06517, "Monks Seafood Restaurant & Bar, Ballyvaughan", 53.11988, -9.15470, "The Wild Atlantic Lodge, Ballyvaughan", 53.11598, -9.14812, "Tea & Garden Rooms, Ballyvaughan", 53.11906, -9.15373, "Vaughan's Pub, Kilfenora", 52.99014, -9.21974,
+            "https://bofeyquinns.weebly.com/", "https://www.monks.ie/", "https://www.thewildatlanticlodge.com/", "http://tearoomsballyvaughan.com/", "http://vaughanspub.ie/"], 
+        accommodations: ["The Wild Atlantic Lodge, Ballyvaughan", 53.11595, -9.14816, "Vaughan Lodge Hotel, Lahinch", 52.93323, -9.34100, "Ballinalacken Castle, Country House Hotel, Doolin", 53.04661, -9.33783, "Sheedy's Country House Hotel, Lisdoonvarna",53.03076, -9.28944, "Doolin Inn, Doolin", 53.01280, -9.38368,
+            "https://www.thewildatlanticlodge.com/", "https://vaughanlodge.ie/", "https://www.ballinalackencastle.com/", "https://sheedys.com/", "https://www.doolininn.ie/"],
+        attractions: ["Poulnabrone Dolmen, Poulnabrone", 53.04879, -9.14007, "Doolin Cliff Walks, Doolin", 52.99854, -9.38787, "Burren Birds of Prey Centre, Ballyvaughan", 53.08936, -9.14394, "Cliffs of Moher Geopark, Inis Díomáin", 52.97236, -9.42632, "The Burren Centre, Kilfenora", 52.99043, -9.21658,
+            "https://www.tripadvisor.ie/Attraction_Review-g186595-d526251-Reviews-Poulnabrone_Dolmen-County_Clare.html", "http://www.doolincliffwalk.com/", "https://www.aillweecave.ie/birds-of-prey", "https://www.burrengeopark.ie/", "http://www.theburrencentre.ie/"]
     }
 }   
 
 // Declaring Global variables as null initially.
-var myVar0; var myVar1; var myVar2; var myVar3; var myVar4; var myVar5; var myVar6; var myVar7;
-var myVar8; var myVar8; var myVar9; var myVar10; var myVar11; var myVar12; var myVar13; var myVar14;
+var myVar0; var myVar1; var myVar2; 
+var myVar3; var myVar4; var myVar5; 
+var myVar6; var myVar7; var myVar8; 
+var myVar9; var myVar10; var myVar11; 
+var myVar12; var myVar13; var myVar14;
+var myVar15; var myVar16; var myVar17; var myVar18; var myVar19;
 
 // function to change between restaurants, accommodations and attractions.
 function initChoice(choices) {
@@ -38,9 +45,14 @@ function initChoice(choices) {
     myVar11 = Object.keys(myObj).map((key) => myObj[key][choices][11])[0],
     myVar12 = Object.keys(myObj).map((key) => myObj[key][choices][12]),
     myVar13 = Object.keys(myObj).map((key) => myObj[key][choices][13])[0],
-    myVar14 = Object.keys(myObj).map((key) => myObj[key][choices][14])[0], 
+    myVar14 = Object.keys(myObj).map((key) => myObj[key][choices][14])[0],
+    myVar15 = Object.keys(myObj).map((key) => myObj[key][choices][15])[0],
+    myVar16 = Object.keys(myObj).map((key) => myObj[key][choices][16])[0],
+    myVar17 = Object.keys(myObj).map((key) => myObj[key][choices][17])[0],
+    myVar18 = Object.keys(myObj).map((key) => myObj[key][choices][18])[0],
+    myVar19 = Object.keys(myObj).map((key) => myObj[key][choices][19])[0], 
     increment = increment + 1),
-    changeDivTxt();
+    executeAll();
 }
 
 // Change div text
@@ -55,7 +67,20 @@ function changeDivTxt() {
     newDivTxt2.innerHTML = myVar6;
     newDivTxt3.innerHTML = myVar9;
     newDivTxt4.innerHTML = myVar12;
-    setMap();
+}
+
+// Change Anchor Text
+function changeAnchorText() {
+    var newDivTxt5 = document.getElementById("a0");
+    var newDivTxt6 = document.getElementById("a1");
+    var newDivTxt7 = document.getElementById("a2");
+    var newDivTxt8 = document.getElementById("a3");
+    var newDivTxt9 = document.getElementById("a4");
+    newDivTxt5.href = myVar15;
+    newDivTxt6.href = myVar16;
+    newDivTxt7.href = myVar17;
+    newDivTxt8.href = myVar18;
+    newDivTxt9.href = myVar19;
 }
 
 //Fade in JavaScript for 3ximages (consecutive)
@@ -165,6 +190,12 @@ function setMap() {
     var markerCluster = new MarkerClusterer(map, markers, {
         imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
     });
+}
+
+function executeAll() { // Executes all functions sequentially
+    changeDivTxt(),
+    changeAnchorText(),
+    setMap();
 }
 //Google Maps JavaScript and location data
 
