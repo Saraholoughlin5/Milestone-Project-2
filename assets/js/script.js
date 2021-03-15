@@ -1,6 +1,28 @@
-// Automatic active class for button 1
-$("#button-one").toggleClass("active");
-var increment = 0;
+//Fade in JavaScript for 3ximages (consecutive)
+var pics = document.getElementById("pics");
+
+var height,
+    half;
+
+var element = document.getElementById("pics");
+
+window.addEventListener("resize", adjustHeightVars);
+window.addEventListener("scroll", fadeBox);
+
+function fadeBox() {
+    var x = pics.offsetTop - half;
+    var y = window.pageYOffset;
+    if (y >= x) {
+        $(".explore").addClass("fadein");
+        $(".eat").addClass("fadein");
+        $(".enjoy").addClass("fadein");
+    }
+}
+function adjustHeightVars() {
+    height = window.innerHeight;
+    half = height * 1.1;
+}
+adjustHeightVars();
 
 // Declaring Global variable "Burren" Object.
 const myObj = {
@@ -22,13 +44,17 @@ var myVar9; var myVar10; var myVar11;
 var myVar12; var myVar13; var myVar14;
 var myVar15; var myVar16; var myVar17; var myVar18; var myVar19;
 
+// Automatic active class for button 1
+$("#button-one").toggleClass("active");
+var increment = 0;
+
 // function to change between restaurants, accommodations and attractions.
 function initChoice(choices) {
     if (increment == 0) {
         if (choices == 'accommodations') {
-            $("#button-one").toggleClass("active");
+            $("#button-one").toggleClass("active"), increment = increment + 1;
         } else if (choices == 'attractions') {
-            $("#button-one").toggleClass("active");
+            $("#button-one").toggleClass("active"), increment = increment + 1;
         } 
     }
     return (myVar0 = Object.keys(myObj).map((key) => myObj[key][choices][0]),
@@ -50,8 +76,8 @@ function initChoice(choices) {
     myVar16 = Object.keys(myObj).map((key) => myObj[key][choices][16])[0],
     myVar17 = Object.keys(myObj).map((key) => myObj[key][choices][17])[0],
     myVar18 = Object.keys(myObj).map((key) => myObj[key][choices][18])[0],
-    myVar19 = Object.keys(myObj).map((key) => myObj[key][choices][19])[0], 
-    increment = increment + 1),
+    myVar19 = Object.keys(myObj).map((key) => myObj[key][choices][19])[0] 
+    ),
     executeAll();
 }
 
@@ -82,34 +108,6 @@ function changeAnchorText() {
     newDivTxt8.href = myVar18;
     newDivTxt9.href = myVar19;
 }
-
-//Fade in JavaScript for 3ximages (consecutive)
-var pics = document.getElementById("pics");
-
-var height,
-    half;
-
-var element = document.getElementById("pics");
-
-window.addEventListener("resize", adjustHeightVars);
-window.addEventListener("scroll", fadeBox);
-
-function fadeBox() {
-    var x = pics.offsetTop - half;
-    var y = window.pageYOffset;
-    if (y >= x) {
-        $(".explore").addClass("fadein");
-        $(".eat").addClass("fadein");
-        $(".enjoy").addClass("fadein");
-    }
-}
-
-function adjustHeightVars() {
-    height = window.innerHeight;
-    half = height * 1.1;
-}
-
-adjustHeightVars();
 
 //Google Maps JavaScript and location data
 function initMap() {
@@ -197,6 +195,3 @@ function executeAll() { // Executes all functions sequentially
     changeAnchorText(),
     setMap();
 }
-//Google Maps JavaScript and location data
-
-// Contact Form (EmailJS)
