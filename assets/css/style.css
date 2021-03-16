@@ -60,9 +60,9 @@ body {
 .carousel-caption h1 {
 	font-family: 'Fredericka the Great', cursive;
 	font-size: 58pt;
-	text-shadow: 0.25rem 0.25rem #000000;
+	text-shadow: 4px 4px #000000;
 	outline-color: orange;
-	padding-bottom: 14.375rem;
+	padding-bottom: 230px;
 	position: relative;
 }
 
@@ -217,7 +217,7 @@ body {
 }
 
 div#map {
-    min-height: 22.5rem;
+    min-height: 360px;
     margin-top: 2.5rem;
 }
 
