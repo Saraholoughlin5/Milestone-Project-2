@@ -36,7 +36,7 @@ body {
 }
 
 .navbar-brand:hover {
-    text-shadow: 2px 2px beige;
+    text-shadow: 0.188rem 0.188rem beige;
 }
 
 /* Navbar contents list styling */
@@ -60,11 +60,10 @@ body {
 .carousel-caption h1 {
 	font-family: 'Fredericka the Great', cursive;
 	font-size: 58pt;
-	text-shadow: 4px 4px #000000;
+	text-shadow: 0.25rem 0.25rem #000000;
 	outline-color: orange;
-	padding-bottom: 230px;
+	padding-bottom: 14.375rem;
 	position: relative;
-
 }
 
 @supports (-webkit-text-stroke: 1px black) {
@@ -79,14 +78,25 @@ body {
 	font-family: 'Fredericka the Great', cursive;
 	font-size: 26pt;
 	color: green;
-	margin-top: 50px;
-	margin-bottom: 20px;
+	margin-top: 3.125rem;
+	margin-bottom: 1.25rem;
+}
+
+@supports (-webkit-text-stroke: 1px black) {
+  .about {
+    -webkit-text-stroke: 1px rgba(25, 51, 0, 0.5);
+    -webkit-text-fill-color: green;
+  }
 }
 
 .about-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12pt;
+    color: black;
     text-align: justify;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 0.938rem;
+    margin-right: 0.938rem;
+    margin-bottom: 1.875rem;
 }
 
 /* 'Things To Do' section -styling for heading and text */
@@ -94,22 +104,29 @@ body {
 	font-family: 'Fredericka the Great', cursive;
 	font-size: 26pt;
     color: green;
-    margin-bottom: 10px;
+    margin-bottom: 1.25rem;
 }
 
 .things-text {
     font-family: 'Open Sans', sans-serif;
     font-size: 12pt;
     color: black;
-    text-align: left;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 30px;
+    text-align: justify;
+    margin-left: 0.938rem;
+    margin-right: 0.938rem;
+    margin-bottom: 1.875rem;
+}
+
+@supports (-webkit-text-stroke: 1px black) {
+  .things {
+    -webkit-text-stroke: 1px rgba(25, 51, 0, 0.5);
+    -webkit-text-fill-color: green;
+  }
 }
 
 /* Styling related to the 3 mid-page images and their headings */
 .places {
-	padding-bottom: 20px;
+	padding-bottom: 1.25rem;
 }
 
 .places h2 {
@@ -117,25 +134,25 @@ body {
 	text-align: center;
 	background-color: rgba(0, 0, 0, 0.5);
 	color: white;
-	padding: 5px;
+	padding: 0.313rem;
 }
 
 .explore img {
 	width: 100%;
-	margin-top: -10px;
-	margin-bottom: 30px;
+	margin-top: -1rem;
+	margin-bottom: 1.875rem;
 }
 
 .eat img {
 	width: 100%;
-	margin-top: -10px;
-	margin-bottom: 30px;
+	margin-top: -1rem;
+	margin-bottom: 1.875 rem;
 }
 
 .enjoy img {
 	width: 100%;
-	margin-top: -10px;
-	margin-bottom: 30px;
+	margin-top: -1rem;
+	margin-bottom: 1.875 rem;
 }
 
 .one {
@@ -168,19 +185,21 @@ body {
 	}
 }
 
+
 /* Styling for buttons x 3 linked to Google Maps */
 .buttonsx3 {    
     font-family: 'Fredericka the Great', cursive;
     background-color: grey;
-    margin-bottom: 20px;
-    margin-right: 20px;
+    margin-bottom: 1.25rem;
+    margin-right: 1.25rem;
+    margin-top: 2.5rem;
     border: none;
 }
 
 
 .buttonsx3:hover{
-    background-color: fuchsia;
-    margin-right: 20px;
+    background-color: #c2b280;
+    margin-right: 1.25rem;
 }
 
 .buttonsrow {
@@ -191,27 +210,32 @@ body {
 
 /* Styling for Google Maps */
 .map-links {
-    margin: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12pt;
+    margin: 1.875rem;
     text-align: left;
 }
 
 div#map {
-    min-height: 360px;
+    min-height: 22.5rem;
+    margin-top: 2.5rem;
 }
 
 /* Weather section layout styling */
 
 .weather-items h3 {
-    margin-top: 40px;
+    margin-top: 2.5rem;
     font-family: 'Fredericka the Great', cursive;
     color: green;
+    margin-top: 3.125rem;
 }
-
 
 .weather-text {
     font-family: 'Open Sans', sans-serif;
     font-size: 12pt;
     color: black;
+    text-align: justify;
+    margin-bottom: 2.5rem;
 }
 
 @supports (-webkit-text-stroke: 1px black) {
@@ -221,6 +245,9 @@ div#map {
   }
 }
 
+.weather {
+    margin-top: 3.75rem;
+}
 /* Contact Form styling */
 .contact-us h3 {
     font-family: 'Fredericka the Great', cursive;
@@ -234,6 +261,9 @@ div#map {
   }
 }
 
+form {
+    margin-bottom: 1.875rem;
+}
 /* Footer styling */
 footer {
 	background-color: grey;
@@ -245,10 +275,18 @@ footer {
     justify-content: space-between;
     color: white;
     font-size: 16pt;
-	padding-top: 20px;
-    padding-bottom: 20px;
-    margin-left: 30px;
-    margin-right: 30px;
+	padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    margin-left: 1.875rem;
+    margin-right: 1.875rem;
+}
+
+.socials i {
+    color: white;
+}
+
+.socials i:hover {
+    color: #c2c2c2;
 }
 
 /* Copyright text styling */
@@ -258,7 +296,7 @@ footer {
 }
 
 /* Media Queries */
-@media (min-device-width: 480px) {
+@media (min-device-width: 30rem) {
       .weather {
           text-align: center;
       }
