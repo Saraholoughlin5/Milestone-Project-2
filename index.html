@@ -5,15 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap stylesheet -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- Font Awesome stylesheet-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+    <!-- Google Fonts stylesheet -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Open+Sans&display=swap"
         rel="stylesheet">
+    <!-- Favicon link -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <!-- Local stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <title>Milestone Project 2</title>
-    <!-- EmailJS script-->
+    <!-- EmailJS script and function -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
     </script>
     <script type="text/javascript">
@@ -24,24 +30,23 @@
 </head>
 
 <body>
-
     <!--Navbar-->
     <nav class="navbar navbar-default">
         <div class="container">
             <div class="navbar-header">
-
+                <!-- Navbar toggle button -->
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+                <!-- Navbar brand/logo -->
                 <a class="navbar-brand">The Burren</a>
             </div>
 
             <div class="collapse navbar-collapse" id="myNavbar">
                 <!-- Links Nav Menu -->
-
                 <ul class="nav navbar-nav">
                     <li><a href="#about">About</a></li>
                     <li><a href="#things">Things To Do</a></li>
@@ -51,14 +56,10 @@
                 </ul>
             </div>
         </div>
-
     </nav>
 
-
-
-    <!-- Carousel/Slides x 4-->
+    <!-- Carousel/Slides x 4 -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
-
         <div class="carousel-inner">
             <div class="item active">
                 <img src="assets/images/burren-thistle.jpg" alt="Burren Thistle">
@@ -79,6 +80,7 @@
             <h1>Come Visit The Burren</h1>
         </div>
 
+        <!-- Carousel left and right clickable arrows/chevrons -->
         <a class="left carousel-control" href="#myCarousel" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left"></span>
             <span class="sr-only">Prev</span>
@@ -89,7 +91,7 @@
         </a>
     </div>
 
-    <!-- About section - text describing the area that is the subject of the website -->
+    <!-- About section - text describing the subject of the website -->
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
@@ -104,7 +106,6 @@
                     National Parks in Ireland, while the full Burren and adjacent territory including the Cliffs of
                     Moher are included in the Burren and Cliffs of Moher Geopark.</p>
             </div>
-
         </div>
     </div>
 
@@ -125,7 +126,8 @@
             </div>
         </div>
     </div>
-    <!-- Text section describing attractions related to the area that is the subject of the website-->
+
+    <!-- Text section describing attractions related to the subject of the website -->
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
@@ -142,11 +144,10 @@
                     recommend viewing our list of attractions.
                 </p>
             </div>
-
         </div>
     </div>
 
-    <!-- Buttons, locations and Map API (JavaScript) -->
+    <!-- Buttons that update links/map markers on click (JavaScript) -->
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6">
@@ -161,6 +162,7 @@
                         onclick="initChoice('attractions')"><i class="fas fa-binoculars visible-xs"></i><span
                             class="hidden-xs">Attractions</span></button>
                 </div>
+                <!-- Initially displayed list/links (changeable on button click (JS)) -->
                 <div class="map-links">
                     <p>A. <a href="https://bofeyquinns.weebly.com/" target="_blank" id="a0"><span id="p0">Bofey Quinn's
                                 Bar & Lodge, Corofin</span></a></p>
@@ -174,6 +176,7 @@
                                 Kilfenora</span></a></p>
                 </div>
             </div>
+            <!-- Google Map API -->
             <div class="col-12 col-md-6" id="map"></div>
         </div>
     </div>
@@ -195,16 +198,13 @@
                     src="https://www.met.ie/widgets/county/Clare" name="MEWarning" width="225" height="170"
                     frameborder="0" marginwidth="0px" marginheight="0px" scrolling="no"
                     allowfullscreen="allowfullscreen"></iframe></div>
-
         </div>
     </div>
 
-    <!-- EmailJS contact form-->
+    <!-- EmailJS contact form -->
     <div class="container contact-us" id="contact">
-
         <h3>Contact Us</h3>
         <form onsubmit="return sendMail(this);" method="POST" id="form1">
-
             <div class="form-group">
                 <label class="form-label">Name:</label>
                 <input type="text" name="name" class="form-control" id="contact-form1" placeholder="Name">
@@ -219,19 +219,16 @@
                 <textarea class="form-control" name="message" id="contact-form3" rows="3"
                     placeholder="Enter your query here"></textarea>
             </div>
-
+        <!-- Form submit button. Clears when clicked, displays success/error message -->
             <button type="submit" class="btn btn-md">Submit</button>
         </form>
-
     </div>
 
-
-    <!-- Footer with social media icons -->
+    <!-- Footer with social media icon links -->
     <footer class="text-center">
         <div class="container">
             <div class="socials">
-                <span><a href="https://www.facebook.com" target="_blank"><i
-                            class="fab fa-facebook-square"></i></a></span>
+                <span><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a></span>
                 <span><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a></span>
                 <span><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></span>
                 <span><a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></span>
@@ -241,16 +238,21 @@
             </div>
         </div>
     </footer>
+
+    <!-- JQuery Script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap Scripts -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-    <script
-        src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <!-- Google Maps API Scripts -->
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA23O3vwdX7xN0ua0DT61_b-SMu3Z9OVts
 &callback=initMap"></script>
+    <!-- Local Script -->
     <script src="assets/js/script.js"></script>
+    <!-- EmailJS Script -->
     <script src="assets/js/sendEmail.js"></script>
 </body>
 
