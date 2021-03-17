@@ -167,6 +167,9 @@ inspection, link and button inspection, browser/device compatability, responsivi
 #### **JavaScript Testing**
 console.log was used to check for errors in the inspect element of the web browser.
 
+#### **EmailJS Testing**
+Please see screenshot of email sent from the website ![below](assets/images/layout/emailjs-receipt.png).
+
 #### **Bug Fixes**
 The form was not clearing when the 'Submit' button was clicked. A resetForm() method was added to the sendMail function to fix this.
 
@@ -229,8 +232,9 @@ an iPhone X and a Huawei Media Pad T5. Responsiveness and accessiblity was posit
 
 #### **Validation**
 **HTML** The HTML code was validated at https://validator.w3.org/. See ![alt HTML Passed](assets/images/validated/html-valid.png).
-**CSS** The CSS code was validated at https://jigsaw.w3.org/css-validator/. See ![alt CSS Passed](assets/images/validated/css-valid.png).
-**JS** The JS code was validated at https://jshint.com/. See ![alt JS Passed with warnings 1](assets/images/validated/jshint1.png), ![alt JS passed with warnings 2](assets/images/validated/jshint2.png) and ![alt JS passed with warnings 3](assets/images/validated/jshint3.png).
+**CSS** The CSS code was validated at https://jigsaw.w3.org/css-validator/. See ![alt CSS Passed](assets/images/validated/css-valid.png).<br>
+**JS** The JS code was validated at https://jshint.com/. See ![alt JS Passed with warnings](assets/images/validated/jshint1.png)(assets/images/validated/jshint2.png)(assets/images/validated/jshint3.png).<br>
+**JS** The JS code for the sendEmail.js was also validated at https://jshint.com/. See ![alt sendEmail JS Passed with warning](assets/images/validated/jshint-email.png).<br>
 
 Note that the HTML file code passes in the validator, however when the external weather widget is added, errors relating directly to this widgets iframe code are present. See [here](assets/images/validated/html-widget-errors.png).
 
@@ -300,26 +304,27 @@ This site was used to convert px to rem
 
 ### **Deployment** <a name="deployment"></a>
 
-#### **Website Creation in Notepad++** <a name="websitecreation"></a>
-The website framework was built offline in Notepad++ and copied to GitPod at various milestones.
+#### **Notepad++** <a name="websitecreation"></a>
+Notepad++ was used for the initial planning of the website.
 
 #### **Website Build in GitHub and GitPod** <a name="websitebuild"></a>
 
 In GitHub, I logged in and clicked on the ‘New’ button in the left-hand menu. On the ‘Create a New Repository’ page, I clicked on the ‘Repository Template’ button and chose the ‘Code Institute’ template provided.
-I checked the ‘Include all branches’ tick-box. I entered ‘MilestoneProject-1’ in the ‘Repository Name’ field, left the radio button checked at ‘Public’, and clicked on the ‘Create Repository’ button. 
+I checked the ‘Include all branches’ tick-box. I entered ‘MilestoneProject-2’ in the ‘Repository Name’ field, left the radio button checked at ‘Public’, and clicked on the ‘Create Repository’ button. 
 
 Once in the new repository, I clicked on ‘GitPod’ in my browser extensions to open the workspace. The ‘index.html’ and ‘style.css’ files were created, with the CSS file being added to the ‘assets/css’ folder.
-Much of the code was initially created in Notepad++ then copied to GitPod. Site was updated using GitPod. Images were added to the ‘assets/images’ folder. 
+Site was updated using GitPod. Images were added to the ‘assets/images’ folder and sub-folders. The js folder was added, along with the 'script.js' file. 
 The following command was entered in the terminal to open port 8000 to view the html file in the browser: ‘python3 -m http.server’. 
 
 Commands were also used to add files, commit changes with comments, push to the repository: git add, git commit and git push. 
-The status was checked using ‘git status’.
+The status was checked using ‘git status’. Commit messages were kept brief and descriptive and utilised more in this project than in the previous project.
 
 #### **Viewing the Live Website with GitHub Pages** <a name="viewinglive"></a>
 
-In the MilestoneProject-1 repository on GitHub, I clicked on the ‘Settings’ tab and scrolled down to the
+In the Milestone-Project-2 repository on GitHub, I clicked on the ‘Settings’ tab and scrolled down to the
 GitHub Pages section. I chose ‘Master Branch’ and ‘Save’, then I clicked on the link to successfully view
-the live page. This link was also used for responsivity and validation checks.
+the live page: https://saraholoughlin5.github.io/Milestone-Project-2/. 
+This link was also used for responsivity and validation checks.
 
 ### **Credits and Acknowledgements** <a name="creditandack"></a>
 
@@ -330,10 +335,10 @@ Thanks also to Slack user @Ferdia Osullivan, who helped with the JavaScript code
 #### **Code** <a name="code"></a>
 Main components of the website were reworked versions of code made available via course lessons. Bootstrap and W3C websites were utilised to 
 help with employing the most appropriate bootstrap classes. Google and stack overflow was also used for clarification.
-- The carousel used elements from this Bootstrap template page ![alt Bootstrap Carousel](https://getbootstrap.com/docs/4.1/examples/carousel/).
-- The fade in x 3 images when scrolling down used code from ![alt Fade In](https://codepen.io/Travisaurus-Rex/pen/pEorEA)
-- The form contains code found at this site ![alt Forms](https://mdbootstrap.com/docs/standard/forms/overview/)
-- Flexbox justification was used in the footer, from [CSS Tricks](https://css-tricks.com/equidistant-objects-with-css/)
+- The carousel used elements from this Bootstrap template page: https://getbootstrap.com/docs/4.1/examples/carousel/.
+- The fade in x 3 images when scrolling down used code from: https://codepen.io/Travisaurus-Rex/pen/pEorEA.
+- The form contains code found at this site: https://mdbootstrap.com/docs/standard/forms/overview/).
+- Flexbox justification was used in the footer, from: https://css-tricks.com/equidistant-objects-with-css/).
 
 #### **Images** <a name="images2"></a>
 
@@ -352,5 +357,5 @@ were taken by me. Credited as follows:
 
 
 #### **Text Content** <a name="textcontent"></a>
-The 'About The Burren' and 'Climate and Weather' text was taken from the [Burren Wikipedia page](https://en.wikipedia.org/wiki/The_Burren#:~:text=The%20Burren%20(%2F%CB%88b%CA%8C,(or%20sometimes%20glaciokarst)%20landscape.).
+The 'About The Burren' and 'Climate and Weather' text was taken from the Burren Wikipedia [page](https://en.wikipedia.org/wiki/The_Burren#:~:text=The%20Burren%20(%2F%CB%88b%CA%8C,(or%20sometimes%20glaciokarst)%20landscape.).
 The remaining text on the site was written by me. 

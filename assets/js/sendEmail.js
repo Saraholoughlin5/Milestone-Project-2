@@ -13,7 +13,7 @@ function sendMail(contactForm) {
         },
         function(error) {
             console.log("FAILED", error);
-            window.alert("Oops! Something went wrong. Please try again.") // Pop-up message (error)
+            window.alert("Oops! Something went wrong. Please try again."); // Pop-up message (error)
 
     });
 
