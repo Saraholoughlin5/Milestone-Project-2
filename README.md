@@ -62,6 +62,7 @@ the user. The 'Map' section, for example, displays the buttons, list and map, ea
 screen. 
 The mock-ups below display various sections of the overall website. 
 
+![alt Responsive Layout](assets/images/layout/am-i-responsive.PNG "Responsive Layout")
 
 ### **UX (User Experience)** 
 
@@ -156,11 +157,18 @@ inspection, link and button inspection, browser/device compatability, responsivi
 | Zoom in on map to view | Markers and clusters can be zoomed in on and read |  Markers and clusters can be zoomed in on and read present  | Pass  |
 | Check each map button/feature| Each map button works as expected |  Each map button works as expected present  | Pass  |
 | Accept weather widget cookies and check info| Weather widget information is up to date |  Weather widget information is up to date | Pass  |
-| Enter name, email and text in the ‘Contact Us' form| Fields can be populated correctly | Fields can be populated correctly  | Pass  |
+| Enter name, email and text in the ‘Contact Us' form| Fields are populated correctly (e.g. email field requires an email) | Fields are populated correctly (e.g. email field requires an email) | Pass  |
+| Click the Submit button when fields are empty | Warning pop-up appears if one or more fields unpopulated | Warning pop-up appears if one or more fields unpopulated | Pass  |
 | Click the 'Submit' button | The form is cleared, a success pop-up is displayed, message received to designated mailbox | The form is cleared, a success pop-up is displayed, message received to designated mailbox | Pass  |
 | Click on each social media icon in the footer in turn | Each platform is displayed in a new tab| Each platform is displayed in a new tab| Pass  |
 | Resize the screen | Each element of the page is displayed as expected | Each element of the page is displayed as expected| Pass  |
 | Check each image for skew/pixelation | Each image is clear and unskewed | Each image is clear and unskewed | Pass  |
+
+#### **JavaScript Testing**
+console.log was used to check for errors in the inspect element of the web browser.
+
+#### **Bug Fixes**
+The form was not clearing when the 'Submit' button was clicked. A resetForm() method was added to the sendMail function to fix this.
 
 ### **Design**
 
@@ -169,10 +177,180 @@ inspection, link and button inspection, browser/device compatability, responsivi
 The site layout (desktop/mobile) was planned using Balsamiq (www.balsamiq.com). See below. Full size images are available [here] 
 
 _Full Desktop View_<br>
+![alt Wireframe Desktop](assets/images/wireframes/balsamiq-desktop-view.PNG)
 
 _Mobile Views_<br>
+![alt Wireframe Mobile](assets/images/wireframes/balsamiq-mobile-view.PNG)
 
 
 #### **Color Palette**
 
-Coolers website (www.coolors.com) was used to compile the colour palette. 
+Coolers website (www.coolors.com) was used to compile the colour palette, which reflects the sky, earth, stone, sparse grass and 
+petals shown in the images. Greys and beiges are popular colours in todays media, fashion and interiors, giving the site an up-to-date feel.
+
+The main colours used from the palette are 'India Green' #138808, and 'Ecru' #C2B280. The other colours are reflected in the images and 
+backgrounds.
+
+![alt Burren Colour Palette](assets/images/layout/coolors-palette.png "Burren Colour Palette")
+
+#### **Images** 
+The images on the site were provided by Pexels (www.pexels.com), Unsplash (www.unsplash.com) and me (2 images). Further details are provided 
+in the Credits & Acknowledgements section below. 
+The images are clear and unskewed, and do not clash with each other visually. They follow the theme of the site and suit the colour palette.
+
+#### **Typography** 
+The fonts used on the website were sourced from [Google Fonts](www.fonts.google.com). The font-families are 'Fredericka the Great' (cursive) 
+and 'Open Sans' (sans-serif). 
+The site brand, carousel caption, image headings, section headings and buttons used the 'Fredericka the Great' font, which does not feel over-used 
+despite the number of placements. 'Open Sans' font was used for the navigation links, text list and general text. 
+
+#### **Current Features** 
+- The navigation menu is presented as a discreet row at the top of the page, switching to a minimalistic toggle button and list on mobile view.
+- The carousel slides provide an informative visual on what to expect from the area the website is about, and the user can choose the speed of 
+the slides by clicking on the next/previous arrows.
+- The fade in JavaScript effect on the three images above the 'Things to Do' text provide a welcome animation to the site and draw the user's eye 
+down to read the text.
+- The main information section of the site is the map and accompanying buttons/list/links, which are easy to use and view, and informative.
+- The weather widget is a regularly updating feature that users may find helpful when visiting the area
+- The working form allows the user to email the site owner and to receive feedback that their message was sent 
+- The footer contains social media icons that link to a new tab for the relevant platform
+
+#### **Future Features**
+- Seasonal information/brochure style detail could be added in future
+- Scroll back to top button could be added to bring the user back to the navigation menu
+- Social media accounts that relate to the site could be added
+
+#### **Browser Compatability**
+The site was tested with Chrome, Safari and Microsoft Edge. Compatible with each browser.
+
+#### **Device Compatability**
+The site was tested on a variety of virtual phones and tablets (via the browser inspect element), and also on a real-world Lenovo ThinkPad laptop, 
+an iPhone X and a Huawei Media Pad T5. Responsiveness and accessiblity was positive for each.
+
+#### **Validation**
+**HTML** The HTML code was validated at https://validator.w3.org/. See ![alt HTML Passed](assets/images/validated/html-valid.png).
+**CSS** The CSS code was validated at https://jigsaw.w3.org/css-validator/. See ![alt CSS Passed](assets/images/validated/css-valid.png).
+**JS** The JS code was validated at https://jshint.com/. See ![alt JS Passed with warnings 1](assets/images/validated/jshint1.png), ![alt JS passed with warnings 2](assets/images/validated/jshint2.png) and ![alt JS passed with warnings 3](assets/images/validated/jshint3.png).
+
+Note that the HTML file code passes in the validator, however when the external weather widget is added, errors relating directly to this widgets iframe code are present. See [here](assets/images/validated/html-widget-errors.png).
+
+### **Technologies** <a name="technologies"></a>
+
+#### **Languages** <a name="languages"></a>
+
+HTML, CSS and JavaScript were used to build and style the Milestone Project 2 website.
+
+#### **Frameworks and Libraries and Scripts** <a name="frameworks"></a>
+
+[GitHub](https://github.com/)<br>
+Cloud-based repository service that hosts the website’s source files
+
+[GitPod](https://gitpod.io/workspaces/)<br>
+Development environment
+
+[Notepad++](https://notepad-plus-plus.org/)<br>
+Offline source code editor. Used for initial planning.
+
+[Bootstrap V4.3](https://getbootstrap.com/)<br>
+Provides pre-defined classes for elements of a website.
+
+[Font Awesome](https://fontawesome.com/)<br>
+Provides free icons that can be restyled with CSS. 
+
+[Google Fonts](https://fonts.google.com/)<br>
+Provides links to a large variety of fonts and related compatible paired fonts. 
+
+[Favicon](https://favicon.io/)<br>
+Used to generate the favicon on the window tab.
+
+[Google CDN](https://developers.google.com/speed/libraries)<br>
+JQuery library
+
+[Bootstrap V3.4.1](https://getbootstrap.com/)<br>
+Latest compiled JavaScript.
+
+[jQuery](https://jquery.com/)<br>
+JavaScript library.
+
+[Google Maps API](https://developers.google.com/maps)<br>
+Allows integration of Google Maps on the website
+
+[EmailJS](https://www.emailjs.com/)<br>
+Uses JavaScript to send an email via a form on the website
+
+#### **Layout and Testing** <a name="layouts"></a>
+
+[Balsamiq](https://balsamiq.com/)<br>
+Wireframes for desktop and mobile view were created on the Balsamiq cloud-based platform
+
+[Am I Responsive?](http://ami.responsivedesign.is/)<br>
+This site was used to create mock-ups of each section of the single scrollable webpage
+
+[W3C HTML Validation](https://validator.w3.org/)<br>
+Used to validate the HTML code of the website
+
+[W3C CSS Validation](https://jigsaw.w3.org/css-validator/)<br>
+Used to validate the CSS code of the website
+
+[JShint](https://jshint.com)<br>
+Used to check the JavaScript code of the website
+
+[PX-to-REM](https://nekocalc.com/px-to-rem-converter)<br>
+This site was used to convert px to rem
+
+### **Deployment** <a name="deployment"></a>
+
+#### **Website Creation in Notepad++** <a name="websitecreation"></a>
+The website framework was built offline in Notepad++ and copied to GitPod at various milestones.
+
+#### **Website Build in GitHub and GitPod** <a name="websitebuild"></a>
+
+In GitHub, I logged in and clicked on the ‘New’ button in the left-hand menu. On the ‘Create a New Repository’ page, I clicked on the ‘Repository Template’ button and chose the ‘Code Institute’ template provided.
+I checked the ‘Include all branches’ tick-box. I entered ‘MilestoneProject-1’ in the ‘Repository Name’ field, left the radio button checked at ‘Public’, and clicked on the ‘Create Repository’ button. 
+
+Once in the new repository, I clicked on ‘GitPod’ in my browser extensions to open the workspace. The ‘index.html’ and ‘style.css’ files were created, with the CSS file being added to the ‘assets/css’ folder.
+Much of the code was initially created in Notepad++ then copied to GitPod. Site was updated using GitPod. Images were added to the ‘assets/images’ folder. 
+The following command was entered in the terminal to open port 8000 to view the html file in the browser: ‘python3 -m http.server’. 
+
+Commands were also used to add files, commit changes with comments, push to the repository: git add, git commit and git push. 
+The status was checked using ‘git status’.
+
+#### **Viewing the Live Website with GitHub Pages** <a name="viewinglive"></a>
+
+In the MilestoneProject-1 repository on GitHub, I clicked on the ‘Settings’ tab and scrolled down to the
+GitHub Pages section. I chose ‘Master Branch’ and ‘Save’, then I clicked on the link to successfully view
+the live page. This link was also used for responsivity and validation checks.
+
+### **Credits and Acknowledgements** <a name="creditandack"></a>
+
+#### **Mentor** <a name="mentor"></a>
+Thank you to my mentor Spencer Barriball for his valuable suggestions, feedback and encouragement.
+Thanks also to Slack user @Ferdia Osullivan, who helped with the JavaScript code related to the linking the buttons to the interchangeable list/links/map.
+
+#### **Code** <a name="code"></a>
+Main components of the website were reworked versions of code made available via course lessons. Bootstrap and W3C websites were utilised to 
+help with employing the most appropriate bootstrap classes. Google and stack overflow was also used for clarification.
+- The carousel used elements from this Bootstrap template page ![alt Bootstrap Carousel](https://getbootstrap.com/docs/4.1/examples/carousel/).
+- The fade in x 3 images when scrolling down used code from ![alt Fade In](https://codepen.io/Travisaurus-Rex/pen/pEorEA)
+- The form contains code found at this site ![alt Forms](https://mdbootstrap.com/docs/standard/forms/overview/)
+- Flexbox justification was used in the footer, from [CSS Tricks](https://css-tricks.com/equidistant-objects-with-css/)
+
+#### **Images** <a name="images2"></a>
+
+The images used on this website were downloaded from [Unsplash](https://unsplash.com/) and [Pexels](https://pexels.com). Two of the images 
+were taken by me. Credited as follows:
+
+| Name                                | Image                                       |
+| :---------------------------------- | :------------------------------------------ | 
+| Lucian Potlog (Pexels)              | Carousel [Image 1](assets/images/burren-thistle.jpg)         |
+| Leighton Smith (Unsplash)           | Carousel [Image 2](assets/images/cliffs.jpg)         |
+| Sarah O'Loughlin (me)               | Carousel [Image 3](assets/images/pollnabron2.jpg)         |
+| Steven Hylands (Pexels)             | Carousel [Image 4](assets/images/burren-sea.jpg)         |
+| Sarah O'Loughlin (me)               | [Image 1 of 3](assets/images/places/explore.png)                  |
+| Lisa Fotios (Pexels)                | [Image 2 of 3](assets/images/places/eat.jpg)                  |
+| Caroline Ebinger (Unsplash)         | [Image 3 of 3](assets/images/places/enjoy.jpg)                 |
+
+
+#### **Text Content** <a name="textcontent"></a>
+The 'About The Burren' and 'Climate and Weather' text was taken from the [Burren Wikipedia page](https://en.wikipedia.org/wiki/The_Burren#:~:text=The%20Burren%20(%2F%CB%88b%CA%8C,(or%20sometimes%20glaciokarst)%20landscape.).
+The remaining text on the site was written by me. 

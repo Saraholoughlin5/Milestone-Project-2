@@ -145,13 +145,13 @@ body {
 .eat img {
 	width: 100%;
 	margin-top: -1rem;
-	margin-bottom: 1.875 rem;
+	margin-bottom: 1.875rem;
 }
 
 .enjoy img {
 	width: 100%;
 	margin-top: -1rem;
-	margin-bottom: 1.875 rem;
+	margin-bottom: 1.875rem;
 }
 
 /* Timing and animation styling for fade in on the 3 images */
@@ -297,7 +297,7 @@ footer {
 }
 
 /* Media Query */
-@media (min-device-width: 30rem) {
+@media (min-width: 30rem) {
       .weather {
           text-align: center;
       }

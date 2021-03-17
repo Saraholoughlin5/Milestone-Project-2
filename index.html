@@ -20,10 +20,9 @@
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <title>Milestone Project 2</title>
     <!-- EmailJS script and function -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-        (function () {
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script>
+    (function () {
             emailjs.init("user_Ce9oxncGwyiQkeNEiavVV");
         })();
     </script>
@@ -200,7 +199,7 @@
                     allowfullscreen="allowfullscreen"></iframe></div>
         </div>
     </div>
-
+    
     <!-- EmailJS contact form -->
     <div class="container contact-us" id="contact">
         <h3>Contact Us</h3>
@@ -210,7 +209,7 @@
                 <input type="text" name="name" class="form-control" id="contact-form1" placeholder="Name" required >
             </div>
             <div class="form-group">
-                <label class="form-label" for="email">Email address:</label>
+                <label class="form-label">Email address:</label>
                 <input type="email" name="emailaddress" class="form-control" id="contact-form2"
                     placeholder="Email address" required >
             </div>
@@ -248,8 +247,7 @@
         crossorigin="anonymous"></script>
     <!-- Google Maps API Scripts -->
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA23O3vwdX7xN0ua0DT61_b-SMu3Z9OVts
-&callback=initMap"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA23O3vwdX7xN0ua0DT61_b-SMu3Z9OVts&callback=initMap"></script>
     <!-- Local Script -->
     <script src="assets/js/script.js"></script>
     <!-- EmailJS Script -->
