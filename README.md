@@ -218,7 +218,7 @@ inspection, link and button inspection, browser/device compatability and respons
 console.log was used to check for errors in the inspect element of the web browser.
 
 #### **EmailJS Testing**<a name="emailjstesting"></a>
-Please see screenshot of email sent from the website. ![alt EmailJS Receipt](assets/images/layout/emailjs-receipt.PNG).
+Please see screenshot of email sent from the website.  ![alt EmailJS Receipt](assets/images/layout/emailjs-receipt.PNG).
 
 #### **Bug Fixes**<a name="bug"></a>
 The form was not clearing when the 'Submit' button was clicked. A 'resetForm()' method was added to the 'sendMail' function to fix this.
@@ -233,7 +233,7 @@ an iPhone X and a Huawei Media Pad T5. Responsiveness and accessiblity was posit
 ### **Validation**<a name="validation"></a>
 **HTML** The HTML code was validated at https://validator.w3.org/. ![alt HTML Passed](assets/images/validated/html-valid.png)<br>
 **CSS** The CSS code was validated at https://jigsaw.w3.org/css-validator/. ![alt CSS Passed](assets/images/validated/css-valid.png)<br>
-**JS** The JS code was validated at https://jshint.com/. ![alt JS Passed with warnings](assets/images/validated/jshint1.png)(assets/images/validated/jshint2.png)(assets/images/validated/jshint3.PNG)<br>
+**JS** The JS code was validated at https://jshint.com/. ![alt JS Passed with warnings](assets/images/validated/jshint1.PNG)(assets/images/validated/jshint2.PNG)(assets/images/validated/jshint3.PNG)<br>
 **JS** The JS code for the sendEmail.js was also validated at https://jshint.com/. ![alt sendEmail JS Passed with warning](assets/images/validated/jshint-email.PNG)<br>
 
 Note that the HTML file code passes in the validator, however when the external weather widget is added, errors relating directly to this widgets iframe code are present. See [here](assets/images/validated/html-widget-errors.png).
@@ -368,6 +368,7 @@ Site was updated using GitPod. Images were added to the ‘assets/images’ fold
 The following command was entered in the terminal to open port 8000 to view the html file in the browser: ‘python3 -m http.server’. 
 
 Commands were also used to add files, commit changes with comments, push to the repository: git add, git commit and git push. 
+The git add command was used per updated file (instead of git add .). When a file was deleted the git rm command was used.
 The status was checked using ‘git status’. Commit messages were kept brief and descriptive and utilised more in this project than in the previous project.
 
 #### **Viewing the Live Website with GitHub Pages**<a name="viewinglive"></a>
