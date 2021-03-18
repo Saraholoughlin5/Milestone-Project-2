@@ -69,7 +69,7 @@ portrait. Each section is accessible via the navigation menu list.
 The 'Home' page header contains a simple navigation menu with brand text and section links. This menu is displayed 
 as a drop-down toggle menu with hamburger button in mobile view. 
 
-The navigation menu contains Home, About and Contact links (3-page website). 
+The navigation menu contains About, Things To Do, Map, Weather and Contact Us links. 
 
 The majority of the home page section contains a carousel slideshow, with 4 rotating images and a text overlay 
 inviting users to ‘Come Visit The Burren’.  
@@ -81,24 +81,24 @@ and can also be reached by scrolling down from the top of the home page section.
 
 #### **'Things To Do' section**<a name="thingstodo"></a>
 The ‘Things To Do’ section contains 3 inline images with headings. These are animated with a JavaScript fadeBox 
-function on initial page load. Animation is visibile when scrolling down for the first time visiting the page 
+function on initial page load. Animation is visible when scrolling down for the first time when visiting the site 
 (reload required to view the animation again). 
 
 Text relating to ‘things to do’ in The Burren accompanies the images. 
 
 #### **'Map' section**<a name="map"></a>
-The ‘Maps’ section is comprised of 2 parts – buttons and links, and the map itself. The 3 buttons update from 
+The ‘Map’ section is comprised of 3 parts – buttons, links, and the map itself. The 3 buttons change from 
 displaying text to font awesome icons when in mobile view.  
 JavaScript has been used to ensure that interchangeable lists are linked to the buttons and also the map display.
 
 #### **'Climate and Weather' section**<a name="weather"></a>
 The Climate and Weather section contains text regarding local climate, plus a weather widget, which adds to the 
-information-providing feel of the site.
+information-providing feel of the tourist-oriented website.
 
 #### **'Contact Us' section**<a name="contact"></a>
-The contact form uses the EmailJS to send the site visitor’s details and message to a designated, checkable email 
-address. A separate javascript script file, sendEmail.js, contains the function required to achieve this (a function 
-is also present in the <head> section of the HTML file). 
+The contact form uses the EmailJS to send the site visitor’s details and message to a designated, checkable mailbox. 
+A separate javascript script file, sendEmail.js, contains the function required to achieve this (a function is also present 
+in the <head> section of the HTML file). 
 
 Once the form is submitted a pop-up box containing a 'success' message is displayed, and the form fields are cleared.
 
@@ -107,7 +107,7 @@ The Burren website is responsive across a number of browsers, devices and orient
 vertical, scrollable page. The navigation links bring the user down the page to the relevant sections. Many of the elements 
 are side-by-side in desktop view, but placed on top of each other in mobile view. This provides an intuitive experience for 
 the user. The 'Map' section, for example, displays the buttons, list and map, easily visible together vertically on a mobile 
-screen. 
+screen, and horizontally on desktop view. 
 The mock-ups below display various sections of the overall website. 
 
 ![alt Responsive Layout](assets/images/layout/am-i-responsive.PNG "Responsive Layout")
@@ -118,8 +118,8 @@ The mock-ups below display various sections of the overall website.
 This website could be used as part of a tourism drive for the area, possibly a government funded initiative to bring more 
 tourists to the area, and boost the economy. The website could also improve the area’s presence online.  
 User needs are met, as inspiring imagery encourages further exploration of the site, which leads to relevant information 
-on the region. The site owner’s objectives are also met, as the content and ease of use provide relevant information to site 
-visitors. 
+on the region, encouraging visitors to the area. The site owner’s objectives are also met, as the content and ease of use 
+provide relevant information and features for site visitors. 
 
 #### **Scope Plane**<a name="scope"></a>
 The website contains a variety of features that enhance the tourism aspect of the site. The carousel slideshow provides 
@@ -144,10 +144,10 @@ works well as a single scrolling page, as some sections are not very content hea
 pages. 
 
 #### **Surface Plane**<a name="surface"></a>
-The colour palette was drawn mostly from the images used in the carousel, grey, beige, green and white. The pops of pink provided 
-by the flowers are the only use of bright colour on the site. This evokes the bright, stark feel of the Burren, but also the 
-serenity and pleasantness of the area. The layout of the website is minimal but informative. The menu and footer icons are 
-minimalistic to reduce intrusiveness. The images and map are the main focus of the site.  
+The colour palette was drawn mostly from the images used in the carousel: grey, beige, green and white. The pops of pink provided 
+by the flowers are the only use of bright colour on the site, along with blue skies in the main images. This evokes the bright, 
+stark feel of the Burren, but also the serenity and pleasantness of the area. The layout of the website is minimal but informative. 
+The menu and footer icons are minimalistic to reduce intrusiveness. The images and map are the main focus of the site.  
 
 ### **User Stories**<a name="userstories"></a>
 
@@ -156,18 +156,18 @@ minimalistic to reduce intrusiveness. The images and map are the main focus of t
 - The site's purpose is clear, I am the intended user (tourist, visitor to the area, planning a visit to the area)
 - I can navigate the single page website easily. Scrolling up and down the page is intuitive and error free
 - The navigation links lead to the expected sections on the website
-- I can find out the information I was expecting in the appropriate sectio (sometimes accompanied with images/widget)
+- I can find out the information I was expecting in the appropriate section (sometimes accompanied with images/feature)
 - The map displays the list of restaurants, accommodation and attractions as expected when each button is clicked.
-- The external links for each restaurant ect. listed are valid and take me to the external site
-- The contact form allows me to send a query to the site owner, for example request for information on the area/tourist information.
-- The social media icons link to relevant platforms
+- The external links for each restaurant etc. listed are valid and take me to the external site
+- The contact form allows me to send a query to the site owner, for example, a request for information on the area/tourist information.
+- The social media icons link to the expected platforms
 - The website is accessible and works on a variety of devices, including my laptop and my phone
 - The website is also available via different browsers (Chrome, Safari, MS Edge)
 
 #### **Returning User**<a name="returning"></a>
 
 - I can check if new links have been added to the list of restaurants, accommodation or attractions
-- I can check the map to help navigate the area
+- I can check the map to help me navigate the area or find somewhere I may have visited from previously visiting this website
 - I can read the information about the area, refresh my memory on things to do and check the weather widget
 - I can send a query/message to the site owner via the contact form
 - I can check the social media sites via the footer icons
@@ -175,14 +175,14 @@ minimalistic to reduce intrusiveness. The images and map are the main focus of t
 #### **Frequent User**<a name="frequent"></a>
 
 - I can use the map to find the places listed
-- I can contact the site owner with any questions on the area
+- I can contact the site owner with any questions on the area/requests for up-to-date information
 - I can check for new sections/information on the area
 
 ### **Testing**<a name="testing"></a>
 
 This is a partially static website with three main JavaScript features: fade in images, buttons and text/urls linked 
 to the Google Maps map, and the EmailJS contact form.
-Testing will cover JavaScript feature workability, visual inspection (layout, image clarity, alignment), text 
+Testing covers JavaScript feature workability, visual inspection (layout, image clarity, alignment), text 
 inspection, link and button inspection, browser/device compatability and responsivity. 
 
 #### **User Testing**<a name="usertesting"></a>
@@ -256,7 +256,7 @@ _Mobile Views_<br>
 Coolers website (www.coolors.com) was used to compile the colour palette, which reflects the sky, earth, stone, sparse grass and 
 petals shown in the images. Greys and beiges are popular colours in todays media, fashion and interiors, giving the site an up-to-date feel.
 
-The main colours used from the palette are 'India Green' #138808, and 'Ecru' #C2B280. The other colours are reflected in the images and 
+The main colours used from the palette are 'India Green' #138808, and 'Ecru' #C2B280. The remaining palette colours are reflected in the images and 
 backgrounds.
 
 ![alt Burren Colour Palette](assets/images/layout/coolors-palette.png "Burren Colour Palette")
@@ -409,5 +409,5 @@ were taken by me. Credited as follows:
 
 
 #### **Text Content**<a name="textcontent"></a>
-The 'About The Burren' and 'Climate and Weather' text was taken from the Burren Wikipedia [page](https://en.wikipedia.org/wiki/The_Burren).
+The 'About The Burren' and 'Climate and Weather' sectoins text is available on the Burren Wikipedia [page](https://en.wikipedia.org/wiki/The_Burren).
 The remaining text on the site was written by me. 
