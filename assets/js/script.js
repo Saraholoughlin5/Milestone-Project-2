@@ -1,3 +1,4 @@
+//The fade in x 3 images when scrolling down used code from: https://codepen.io/Travisaurus-Rex/pen/pEorEA
 //Fade in JavaScript for 3ximages (consecutive)
 var pics = document.getElementById("pics");
 

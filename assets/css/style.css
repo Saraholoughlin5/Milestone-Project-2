@@ -269,7 +269,7 @@ form {
 footer {
 	background-color: grey;
 }
-
+/* Flexbox justification was used to space the footer items (first 2 properties/values). From: https://css-tricks.com/equidistant-objects-with-css/) */
 /* Social media icons styling */
 .socials {
     display: flex;
