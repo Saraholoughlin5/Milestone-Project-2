@@ -236,7 +236,7 @@ an iPhone X and a Huawei Media Pad T5. Responsiveness and accessiblity was posit
 **JS** The JS code was validated at https://jshint.com/. ![alt JS Passed with warnings 1](assets/images/validated/jshint1.PNG)![alt JS Passed with warnings 2](assets/images/validated/jshint2.PNG)![alt JS Passed with warnings 3](assets/images/validated/jshint3.PNG)<br>
 **JS** The JS code for the sendEmail.js was also validated at https://jshint.com/. ![alt sendEmail JS Passed with warning](assets/images/validated/jshint-email.PNG)<br>
 
-Note that the HTML file code passes in the validator, however when the external weather widget is added, errors relating directly to this widgets iframe code are present. See [here](assets/images/validated/html-widget-errors.png).
+Note that the HTML file code passes in the validator, however when the external weather widget is added, errors relating directly to this widgets iframe code are present. See [here](assets/images/validated/html-widget-errors.PNG).
 
 ### **Design**<a name="design"></a>
 
