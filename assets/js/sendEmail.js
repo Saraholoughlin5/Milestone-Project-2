@@ -5,17 +5,17 @@ function sendMail(contactForm) {
         "from_email": contactForm.emailaddress.value,
         "message": contactForm.message.value
     }, resetForm()) // resetForm() added to ensure form clearing on submit
-    .then(
-        function(response) {
-            console.log("SUCCESS", response);
-            window.alert("Your message has been sent! We will respond to you shortly."); // Pop-up message (success)
+        .then(
+            function (response) {
+                console.log("SUCCESS", response);
+                window.alert("Your message has been sent! We will respond to you shortly."); // Pop-up message (success)
 
-        },
-        function(error) {
-            console.log("FAILED", error);
-            window.alert("Oops! Something went wrong. Please try again."); // Pop-up message (error)
+            },
+            function (error) {
+                console.log("FAILED", error);
+                window.alert("Oops! Something went wrong. Please try again."); // Pop-up message (error)
 
-    });
+            });
 
     return false;
 }
